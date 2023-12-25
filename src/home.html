@@ -4,40 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naol's Portfolio</title>
-</head>
-<body>
-    <div class="page">
-         <header>
-            <nav>
-                <h2 class="logo">Naol's <span>Portfolio</span></h2>
-                <ul>
-                    <li> <a href="home.html">Home</a></li>
-                    <li><a href="about.html" target="_blank">About Me</a></li>
-                    <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="cv.html" target="_blank">CV</a></li>
-            </ul>
-            
-        </nav>
-    </header>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <body class="bg-dark text-white">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home.html" target="_blank">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html" target="_blank">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hobbies.html" target="_blank">Hobbies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html" target="_blank">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="home.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="about.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="hobbies.html" target="_blank">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="contact.html" target="_blank">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-light" href="cv.html" target="_blank">CV</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </header>
         <section class="content">
                 <h3>Hello, My Name is</h3>
-                <h1>Naol Gezahegne</h1>
-                <h2>I am a Software Engineering Student.</h2>
+                <h1 class="display-1 fw-bold">Naol <span class="text-danger">Gezahegne</span></h1>
+                <h2>I am a Software <span class="text-danger">Engineering</span> Student.</h2>
         </section>
     </div>
-    <button onclick="window.location.href='about.html'">Next</button>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="https://x.com/N1sup">twitter</a></li>
-                <li><a href="https://linkedin.com/in/naol-gezahegne">linkedin</a></li>
-                <li><a href="mailto:naolgezahegne@gmail.com">email</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Naol. All rights reserved.</p>
-    </footer>
-     
+    <button class="btn btn-primary mt-lg-5 mb-lg-5 text-end mx-lg-5" onclick="window.location.href='about.html'">Next</button>
+    <footer class="footer fixed-bottom bg-gradient mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col text-white text-center">
+                    <nav class="nav justify-content-center">
+                        <a class="nav-link" href="https://x.com/N1sup">Twitter</a>
+                        <a class="nav-link" href="https://linkedin.com/in/naol-gezahegne">LinkedIn</a>
+                        <a class="nav-link" href="mailto:naolgezahegne@gmail.com">Email</a>
+                    </nav>
+                </div>
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 Naol. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>  
 </body>
 </html>
